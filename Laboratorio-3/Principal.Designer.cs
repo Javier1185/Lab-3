@@ -54,28 +54,28 @@
             // problema1ToolStripMenuItem
             // 
             this.problema1ToolStripMenuItem.Name = "problema1ToolStripMenuItem";
-            this.problema1ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.problema1ToolStripMenuItem.Size = new System.Drawing.Size(109, 25);
             this.problema1ToolStripMenuItem.Text = "Problema 1";
             this.problema1ToolStripMenuItem.Click += new System.EventHandler(this.problema1ToolStripMenuItem_Click);
             // 
             // problema2ToolStripMenuItem
             // 
             this.problema2ToolStripMenuItem.Name = "problema2ToolStripMenuItem";
-            this.problema2ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.problema2ToolStripMenuItem.Size = new System.Drawing.Size(109, 25);
             this.problema2ToolStripMenuItem.Text = "Problema 2";
             this.problema2ToolStripMenuItem.Click += new System.EventHandler(this.problema2ToolStripMenuItem_Click);
             // 
             // problema3ToolStripMenuItem
             // 
             this.problema3ToolStripMenuItem.Name = "problema3ToolStripMenuItem";
-            this.problema3ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.problema3ToolStripMenuItem.Size = new System.Drawing.Size(109, 25);
             this.problema3ToolStripMenuItem.Text = "Problema 3";
             this.problema3ToolStripMenuItem.Click += new System.EventHandler(this.problema3ToolStripMenuItem_Click);
             // 
             // problema4ToolStripMenuItem
             // 
             this.problema4ToolStripMenuItem.Name = "problema4ToolStripMenuItem";
-            this.problema4ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.problema4ToolStripMenuItem.Size = new System.Drawing.Size(109, 25);
             this.problema4ToolStripMenuItem.Text = "Problema 4";
             this.problema4ToolStripMenuItem.Click += new System.EventHandler(this.problema4ToolStripMenuItem_Click);
             // 
@@ -89,7 +89,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Principal";
             this.Text = "Principal";
             this.menuStrip1.ResumeLayout(false);
@@ -100,11 +100,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem problema1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem problema2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem problema3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem problema4ToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
