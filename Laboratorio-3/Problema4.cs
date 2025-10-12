@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace Laboratorio_3
 {
-
     public partial class Problema4 : Form
     {
         List<double> ventas = new List<double>();
@@ -78,6 +77,7 @@ namespace Laboratorio_3
             }
             DgbOrdenado.DataSource = importesOrdenados.Select(v => new { Importe = v }).ToList();
         }
+        //no me deja quitarlos
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
 
         private void NumVen_ValueChanged(object sender, EventArgs e) { }
@@ -99,5 +99,4 @@ namespace Laboratorio_3
         }
 
     }
-   
 }
