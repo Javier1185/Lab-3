@@ -13,6 +13,7 @@ namespace Laboratorio_3
     public partial class Problema4 : Form
     {
         List<double> ventas = new List<double>();
+
         public Problema4()
         {
             InitializeComponent();

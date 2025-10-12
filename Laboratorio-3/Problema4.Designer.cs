@@ -52,6 +52,7 @@
             this.btnRefrescar.TabIndex = 23;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnOrdenar
             // 
@@ -61,6 +62,7 @@
             this.btnOrdenar.TabIndex = 22;
             this.btnOrdenar.Text = "Ordenar ";
             this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // bntImporte
             // 
@@ -70,6 +72,7 @@
             this.bntImporte.TabIndex = 21;
             this.bntImporte.Text = "Importe";
             this.bntImporte.UseVisualStyleBackColor = true;
+            this.bntImporte.Click += new System.EventHandler(this.bntImporte_Click);
             // 
             // DgbCompleto
             // 
