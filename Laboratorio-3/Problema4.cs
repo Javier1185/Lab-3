@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Laboratorio_3
 {
+
     public partial class Problema4 : Form
     {
         List<double> ventas = new List<double>();
@@ -77,6 +78,13 @@ namespace Laboratorio_3
             }
             DgbOrdenado.DataSource = importesOrdenados.Select(v => new { Importe = v }).ToList();
         }
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+
+        private void NumVen_ValueChanged(object sender, EventArgs e) { }
+
+        private void txtCant_TextChanged(object sender, EventArgs e) { }
+
+        private void ltsCantidad_SelectedIndexChanged(object sender, EventArgs e) { }
 
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
@@ -89,6 +97,7 @@ namespace Laboratorio_3
             txtCant.Focus();
             MessageBox.Show("El formulario ha sido reiniciado.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-    }
-    }
 
+    }
+   
+}
