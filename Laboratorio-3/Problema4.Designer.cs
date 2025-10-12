@@ -1,4 +1,4 @@
-﻿namespace Laboratorio_3
+namespace Laboratorio_3
 {
     partial class Problema4
     {
@@ -172,7 +172,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

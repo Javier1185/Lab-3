@@ -6,7 +6,7 @@ namespace Laboratorio_3
 {
     public partial class Problema4 : Form
     {
-        private ErrorProvider erpError = new ErrorProvider();
+
 
         public Problema4()
         {
@@ -129,6 +129,11 @@ namespace Laboratorio_3
 
         private void password_KeyUp(object sender, KeyEventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
