@@ -32,24 +32,28 @@ namespace Laboratorio_3
         {
             s = Convert.ToInt32(txtMontoIni.Text);
             lstDepositos.Items.Add(s);
+            btnAbrirC.Enabled = false;
+            btnAbrirC.Visible = false;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             int k = 0;
-                k = Convert.ToInt32(txtSaldo.Text);
+            k = Convert.ToInt32(txtSaldo.Text);
             if (rdbDepositos.Checked)
             {
-               s = s + k;
-                lstDepositos.Items.Add(s);
+                s = s + k;
+                lstDepositos.Items.Add(k);
             }
-            else if (rdbRetiros.Checked) {
-                if (s < k) {
+            else if (rdbRetiros.Checked)
+            {
+                if (s < k)
+                {
                     MessageBox.Show("Execede el limte de la cuenta, ingrese una menor cantidad.");
                     return;
                 }
-                s = s - k;
-                lstRetiros.Items.Add(s);
+                 s = s - k;
+                lstRetiros.Items.Add(k);
             }
             txtSaldoActual.Text = s.ToString();
         }
@@ -57,6 +61,15 @@ namespace Laboratorio_3
         private void txtSaldoActual_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void lstRetiros_DoubleClick_1(object sender, EventArgs e)
+        {
+            DialogResult x = MessageBox.Show("Desa eliminar el elemento seleccionado", "Confirmar", MessageBoxButtons.YesNo);
+
+            if (x == DialogResult.Yes)
+            {
+                lstRetiros.Items.RemoveAt(lstRetiros.SelectedIndex);
+            }
         }
     }
 }
