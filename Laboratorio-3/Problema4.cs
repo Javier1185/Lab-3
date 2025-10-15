@@ -12,7 +12,8 @@ namespace Laboratorio_3
         {
             InitializeComponent();
 
-          
+
+            password.PasswordChar = '●';
             password.Validating += password_Validating;
             password.KeyPress += password_KeyPress;
             password.KeyDown += password_KeyDown;

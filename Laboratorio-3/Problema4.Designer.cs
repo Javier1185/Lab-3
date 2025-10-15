@@ -28,6 +28,7 @@ namespace Laboratorio_3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.password = new System.Windows.Forms.TextBox();
             this.correo1 = new System.Windows.Forms.TextBox();
             this.lastName = new System.Windows.Forms.TextBox();
@@ -39,7 +40,9 @@ namespace Laboratorio_3
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn = new System.Windows.Forms.Button();
+            this.erpError = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpError)).BeginInit();
             this.SuspendLayout();
             // 
             // password
@@ -150,6 +153,10 @@ namespace Laboratorio_3
             this.btn.UseVisualStyleBackColor = false;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
+            // erpError
+            // 
+            this.erpError.ContainerControl = this;
+            // 
             // Problema4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,8 +177,10 @@ namespace Laboratorio_3
             this.Name = "Problema4";
             this.Text = "Problema4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -187,5 +196,6 @@ namespace Laboratorio_3
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.ErrorProvider erpError;
     }
 }
